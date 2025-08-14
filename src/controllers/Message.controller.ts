@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import ProcessedMessage from "../models/ProcessedMessage.ts";
+import ProcessedMessage from "../models/ProcessedMessage";
 
 const getMessagesByWaId = async (req: Request, res: Response) => {
   try {

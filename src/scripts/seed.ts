@@ -3,8 +3,8 @@ import path from "path";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 
-import connectDB from "../db/index.ts"; // remove .ts extension
-import ProcessedMessage from "../models/ProcessedMessage.ts"; // remove .ts extension
+import connectDB from "../db/index"; // remove .ts extension
+import ProcessedMessage from "../models/ProcessedMessage"; // remove .ts extension
 
 dotenv.config();
 

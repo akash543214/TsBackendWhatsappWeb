@@ -1,7 +1,7 @@
 
-import app from './app.ts';
+import app from './app';
 
-import connectDB from './db/index.ts';
+import connectDB from './db/index';
 
 connectDB()
 .then(() => {
