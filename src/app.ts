@@ -21,7 +21,11 @@ app.use(cookieParser());
 
 
 import userRouter from './routes/Users.routes.ts';
+import messageRouter from './routes/Messages.routes.ts';
+
 
 app.use("/api", userRouter);
+app.use("/api", messageRouter);
+
 
 export default app;

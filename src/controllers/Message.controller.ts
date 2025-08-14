@@ -20,6 +20,19 @@ const getMessagesByWaId = async (req: Request, res: Response) => {
 };
 
 
+const addMessage = async (req: Request, res: Response) => {
+  try {
+   
+    const message = req.body;
+    const msg = await ProcessedMessage.create(message);
+
+    res.status(200).json(msg);
+  } catch (err) {
+    console.error("Error fetching messages:", err);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
 export {
-    getMessagesByWaId
+    getMessagesByWaId,addMessage
 }

@@ -1,6 +1,6 @@
 import { Router } from "express";
 import {
-  getMessagesByWaId
+  getMessagesByWaId,addMessage
 } from '../controllers/Message.controller.ts'
 
 
@@ -10,6 +10,7 @@ const router = Router();
 
 router.route('/messages/:wa_id').get(getMessagesByWaId);
 
+router.route('/send-message').post(addMessage);
 
 
 export default router; 
