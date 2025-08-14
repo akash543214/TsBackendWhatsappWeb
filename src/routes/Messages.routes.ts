@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   getMessagesByWaId,addMessage
-} from '../controllers/Message.controller'
+} from '../controllers/Message.controller.js'
 
 
 

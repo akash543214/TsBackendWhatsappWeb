@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   getUsers
-} from '../controllers/Users.controller'
+} from '../controllers/Users.controller.js'
 
 
 

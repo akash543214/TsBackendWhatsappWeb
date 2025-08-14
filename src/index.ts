@@ -1,7 +1,7 @@
 
-import app from './app';
+import app from './app.js';
 
-import connectDB from './db/index';
+import connectDB from './db/index.js';
 
 connectDB()
 .then(() => {
